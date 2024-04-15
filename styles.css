@@ -1,0 +1,91 @@
+
+
+
+h1, h2, h3, p, a, button, li, ul, ol {
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+}
+
+h1 {
+    text-shadow: 0px 0px 15px rgba(255,255,255,0.77);
+}
+
+body {
+    background-color: rgb(205, 205, 205);
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    h1 {
+        margin-left: 1rem;
+    };
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav-buttons {
+    display:flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+    a {
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    a:hover {
+        scale: 1.2;
+    }
+}
+
+
+.section{
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+}
+
+.section-intro {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+}
+
+img {
+    scale: .8;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    margin-left: 10%
+}
+
+.sidebyside {
+    display: flex;
+    flex-direction: row;
+    animation: panRightToLeft 2s ease-in-out;
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+@keyframes panRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
